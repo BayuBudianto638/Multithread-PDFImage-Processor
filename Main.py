@@ -40,7 +40,6 @@ def process_pdf_in_batches(file_path, output_dir, batch_size=30):
     return results
 
 def handle_file_processing(file_path, output_dir):
-    """Handles the file processing in the background."""
     process_pdf_in_batches(file_path, output_dir, batch_size=20)  
 
 @app.route('/upload', methods=['POST'])
